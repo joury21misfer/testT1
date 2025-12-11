@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>التوأم الرقمي — تجربة احترافية</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- رابط ملف الـ CSS الخارجي -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="wrap">
+
+  <header aria-label="رأس الصفحة">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">مرحبا</div>
+      <div>
+        <h1>التوأم الرقمي — تجربة مستقبلية</h1>
+        <p class="muted-small">نسخة تجريبية تُظهر كيف يتصرف توأمك الرقمي داخل الخدمات الحكومية</p>
+      </div>
+    </div>
+    <div>
+      <div class="muted-small">جاهزة للعرض</div>
+    </div>
+  </header>
+
+  <div class="grid">
+
+    <!-- LEFT -->
+    <div>
+
+      <!-- HERO -->
+       <section class="card fade-in" aria-labelledby="heroTitle">
+        <div class="hero">
+          <div class="lead">
+            <h2 id="heroTitle">التوأم الرقمي — ممثلك الذكي داخل أبشر</h2>
+            <p class="muted">أعطه صلاحية محددة، وهو يتصرف نيابةً عنك...</p>
+
+            <div class="cta-row">
+              <button class="btn" id="openSettings">فتح الإعدادات</button>
+              <button class="btn secondary" id="previewBtn">معاينة Dashboard</button>
+            </div>
+          </div>
+
+          <div style="width:270px;">
+            <div class="mini-card">
+              <div class="mini-top">
+                <div class="mini-avatar"></div>
+                <div>
+                  <div class="fw">توأمك الذكي</div>
+                  <div class="muted-small">مفعل جزئياً</div>
+                </div>
+              </div>
+              <ul class="mini-list">
+                <li class="muted-small">• ينقذك من المهام الروتينية</li>
+                <li class="muted-small">• يذكّرك قبل انتهاء مستند</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TOGGLES -->
+      <h2 id="permsTitle">الصلاحيات</h2>
+      <section class="card fade-in" aria-labelledby="permsTitle">
+        <p class="muted-small">امسح أو فعّل كل صلاحية...</p>
+
+        <div class="cards-grid" style="margin-top:16px">
+
+          <div>
+            <div class="toggle-row has-tip" role="group" aria-label="تجديد الهوية">
+              <div>
+                <div class="toggle-label">تجديد الهوية الوطنية</div>
+                <div class="toggle-desc">يجري التمديد تلقائياً قبل شهر من الانتهاء.</div>
+              </div>
+              <div style="display:flex;flex-direction:column;align-items:center">
+                <label style="display:flex;align-items:center;gap:8px;cursor:pointer">
+                  <input type="checkbox" id="perm-id" />
+                  <span class="switch" aria-hidden="true"><span class="knob"></span></span>
+                </label>
+                <div class="muted-small" style="margin-top:8px" id="perm-id-status">غير مفعّل</div>
+              </div>
+
+              <div class="tip" role="note">
+                <strong>تفاصيل:</strong>
+                <div style="margin-top:8px">إذا فعّلت هذه الخاصية، سيقوم التوأم بتتبع تاريخ انتهاء الهوية وتقديم طلب التجديد تلقائياً بعد التأكد من متطلبات الوثائق.</div>
+              </div>
+            </div>
+
+            <div class="toggle-row has-tip" role="group" aria-label="تجديد الرخصة" style="margin-top:12px">
+              <div>
+                <div class="toggle-label">تجديد رخصة القيادة</div>
+                <div class="toggle-desc">متابعة تلقائية وتجديد بعد استيفاء المخالفات والرسوم.</div>
+              </div>
+              <div style="display:flex;flex-direction:column;align-items:center">
+                <label style="display:flex;align-items:center;gap:8px;cursor:pointer">
+                  <input type="checkbox" id="perm-dl" />
+                  <span class="switch" aria-hidden="true"><span class="knob"></span></span>
+                </label>
+                <div class="muted-small" id="perm-dl-status">غير مفعّل</div>
+              </div>
+<div class="tip" role="note">
+                <strong>تفاصيل:</strong>
+                <div style="margin-top:8px">التوأم يتحقق من مدة الرخصة، المخالفات، وطلبات الفحص إن لزم للتجديد الآمن.</div>
+              </div>
+            </div>
+
+            <div class="toggle-row has-tip" role="group" aria-label="تنبيهات الجواز" style="margin-top:12px">
+              <div>
+                <div class="toggle-label">تنبيهات انتهاء الجواز</div>
+                <div class="toggle-desc">إشعار قبل 60 و30 و14 يومًا تلقائياً.</div>
+              </div>
+              <div style="display:flex;flex-direction:column;align-items:center">
+                <label style="display:flex;align-items:center;gap:8px;cursor:pointer">
+                  <input type="checkbox" id="perm-pass" />
+                  <span class="switch" aria-hidden="true"><span class="knob"></span></span>
+                </label>
+                <div class="muted-small" id="perm-pass-status">غير مفعّل</div>
+              </div>
+
+              <div class="tip" role="note">
+                <strong>تفاصيل:</strong>
+                <div style="margin-top:8px">الإشعارات ترسل إلى بريدك + داخل لوحة الإشعارات ويمكن ربطها بتذكير هاتفي.</div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="toggle-row has-tip" role="group" aria-label="تحديث العنوان">
+              <div>
+                <div class="toggle-label">تحديث العنوان الوطني</div>
+                <div class="toggle-desc">يسهّل تحديث بيانات السكن والعنوان الإلكتروني.</div>
+              </div>
+              <div style="display:flex;flex-direction:column;align-items:center">
+                <label style="display:flex;align-items:center;gap:8px;cursor:pointer">
+                  <input type="checkbox" id="perm-addr" />
+                  <span class="switch" aria-hidden="true"><span class="knob"></span></span>
+                </label>
+                <div class="muted-small" id="perm-addr-status">غير مفعّل</div>
+              </div>
+
+              <div class="tip" role="note">
+                <strong>تفاصيل:</strong>
+                <div style="margin-top:8px">التوأم يقترح التحديث عند تغيير العنوان ويطلب موافقتك النهائية قبل الإرسال.</div>
+              </div>
+            </div>
+
+            <div class="toggle-row has-tip" role="group" aria-label="التوكيلات" style="margin-top:12px">
+              <div>
+                <div class="toggle-label">إدارة التوكيلات والإلغاءات</div>
+                <div class="toggle-desc">إنشاء/إلغاء توكيلات محددة وفقًا لسياساتك.</div>
+              </div>
+              <div style="display:flex;flex-direction:column;align-items:center">
+                <label style="display:flex;align-items:center;gap:8px;cursor:pointer">
+                  <input type="checkbox" id="perm-power" />
+                  <span class="switch" aria-hidden="true"><span class="knob"></span></span>
+                </label>
+                <div class="muted-small" id="perm-power-status">غير مفعّل</div>
+              </div>
+
+              <div class="tip" role="note">
+                <strong>تفاصيل:</strong>
+                <div style="margin-top:8px">عند تفعيلها، يمكنك ضبط توكيلات مؤقتة أو دائمة وإلغاؤها بسهولة من لوحة التحكم.</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+<br></br>
+      <!-- RESOURCES -->
+      <section class="card fade-in" aria-labelledby="resourcesTitle">
+        <h2 id="resourcesTitle">مصادر وروابط موثوقة</h2>
+        <div class="links muted-small">
+          <ul>
+            <li><a href="https://www.absher.sa" target="_blank" rel="noopener">أبشر — المنصة الحكومية</a></li>
+            <li><a href="https://www.my.gov.sa" target="_blank" rel="noopener">Gov.SA — البوابة الوطنية</a></li>
+            <li><a href="https://www.nca.gov.sa" target="_blank" rel="noopener">NCA — الهيئة الوطنية للأمن السيبراني</a></li>
+            <li><a href="https://www.sdaia.gov.sa" target="_blank" rel="noopener">SDAIA — الذكاء والبيانات</a></li>
+            <li><a href="https://www.cisa.
+gov/secure-our-world/recognize-and-report-phishing" target="_blank" rel="noopener">CISA — التعرّف على التصيّد</a></li>
+          </ul>
+        </div>
+
+      </section>
+      
+      
+     <br></br>
+
+<h3>ملاحظاتك تهمنا</h3>
+       <section class="card fade-in" aria-labelledby="heroTitle">
+
+<form action="https://formspree.io/f/x1dqogvp" method="POST">
+  <label for="name">الاسم:</label>
+  <input type="text" id="name" name="name" required>
+  <br></br>
+  <label for="message">الرسالة / الشكوى:</label>
+  <br></br>
+  <textarea id="message" name="message" rows="5" required></textarea>
+
+  <button type="submit">إرسال</button>
+</form>
+       </section>
+
+     <br></br>
+
+    <!-- RIGHT -->
+    <aside>
+
+      <section class="card fade-in" aria-labelledby="dashTitle">
+        <h2 id="dashTitle">لوحة الحالة السريعة</h2>
+        <div class="status">
+          <div class="row" aria-live="polite">
+            <div>
+              <div style="font-weight:700">الهوية الوطنية</div>
+              <div class="muted-small">منتهية بعد 9 أشهر</div>
+            </div>
+            <div><span class="badge ok" id="bd-id">سارية</span></div>
+          </div>
+
+          <div class="row">
+            <div>
+              <div style="font-weight:700">الجواز</div>
+              <div class="muted-small">تجديد خلال 45 يوم</div>
+            </div>
+            <div><span class="badge warn" id="bd-pass">قريب</span></div>
+          </div>
+
+          <div class="row">
+            <div>
+              <div style="font-weight:700">رخصة القيادة</div>
+              <div class="muted-small">صالح حتى 2029</div>
+            </div>
+            <div><span class="badge ok" id="bd-dl">مجددة</span></div>
+          </div>
+
+          <div class="row">
+            <div>
+              <div style="font-weight:700">العنوان الوطني</div>
+              <div class="muted-small">محدّث</div>
+            </div>
+            <div><span class="badge ok" id="bd-addr">محدث</span></div>
+          </div>
+        </div>
+      </section>
+<br>
+
+</br>
+      <section class="card fade-in quick-actions">
+        <h2>إجراءات سريعة</h2>
+        <button class="btn" id="autoRenewBtn">تشغيل التجديد</button>
+        <button class="btn secondary" id="notifyTest">إشعار تجريبي</button>
+        <button class="btn secondary" id="resetBtn">إعادة ضبط</button>
+    
+    </section>
+
+  </div>
+
+  <div>
+ <footer class="footer">
+  <p>جميع الحقوق محفوظة © 2025</p>
+</footer>
+</br>
+    <span class="names">أثير العقيدي | شادن الربيّع | جوري المسفر</span>
+  </footer>
+
+</div>
+
+<!-- Modal -->
+<div id="introModal" aria-hidden="false">
+  <div class="modal-card">
+    <div class="modal-left">
+ <h3>مرحباً، هذه نسخة للتوأم الرقمي</h3>
+      <p class="muted-small">`أهلاً بك! تطبيق "أبشر توامي" هو نظام حكومي حساس جداً في المملكة العربية السعودية، والتعامل معه (لأغراض استخراج البيانات أو التشغيل الآلي) يتبع بروتوكولات أمنية صارمة ويتطلب غالباً تصريحاً رسمياً لاستخدام واجهات برمجية خاصة غير المتاحة للجمهور العام.
+
+لذلك، يجب التنبيه على النقاط التالية أولاً وقبل كل شيء:
+الأمان والخصوصية: لا يمكنني كتابة كود يتفاعل مباشرة مع نظام أبشر لغرض الوصول إلى معلومات شخصية أو استخراجها دون تصريح رسمي، لأن هذا يخالف سياسات الأمان والحماية الرقمية.`);
+</p>
+      <div class="typewriter muted-small" id="tw"></div>
+      <button class="modal-close" id="startShow">ابدأ العرض</button>
+    </div>
+    <div class="modal-right">
+      <div class="modal-box">
+        <div class="modal-title">التوأم الرقمي</div>
+        <div class="muted-small">منصة تجريبية</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JavaScript -->
+
+<script>
+  // إغلاق نافذة الترحيب
+  const modalRoot = document.getElementById('introModal');
+  const closeBtn = document.getElementById('startShow');
+
+  closeBtn.addEventListener('click', () => {
+    modalRoot.style.display = 'none';
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      modalRoot.style.display = 'none';
+    }
+  });
+</script>
+
+<script>
+  // Typewriter for modal
+  (function(){
+    const phrase = " مجرد نموذج تجريبي ";
+    const el = document.getElementById('tw');
+    let i=0;
+    function step(){ if(i<=phrase.length){ el.textContent = phrase.slice(0,i++); setTimeout(step,25)} }
+    step();
+  })();
+
+  // Modal open/close
+  const modulRoot = document.getElementById('introModal');
+  document.getElementById('startShow').addEventListener('click', ()=> {
+    modulRoot.style.display='none';
+  });
+  // Also allow Esc to close
+  document.addEventListener('keydown',(e)=>{ if(e.key==='Escape'){ modalRoot.style.display='none'} });
+
+  // Toggle controls with localStorage & status labels
+  const perms = [
+    {id:'perm-id', labelEl:'perm-id-status'},
+    {id:'perm-dl', labelEl:'perm-dl-status'},
+    {id:'perm-pass', labelEl:'perm-pass-status'},
+    {id:'perm-addr', labelEl:'perm-addr-status'},
+    {id:'perm-power', labelEl:'perm-power-status'}
+  ];
+
+  function loadPerms(){
+    perms.forEach(p=>{
+      const el = document.getElementById(p.id);
+      const status = document.getElementById(p.labelEl);
+      const val = localStorage.getItem(p.id) === '1';
+      el.checked = val;
+      status.textContent = val ? 'مفعّل' : 'غير مفعّل';
+      status.style.color = val ? 'var(--success)' : 'var(--muted)';
+    });
+  }
+
+  function attachListeners(){
+    perms.forEach(p=>{
+      const el = document.getElementById(p.id);
+      const status = document.getElementById(p.labelEl);
+      el.addEventListener('change', ()=>{const on = el.checked;
+        localStorage.setItem(p.id, on ? '1' : '0');
+        status.textContent = on ? 'مفعّل' : 'غير مفعّل';
+        status.style.color = on ? 'var(--success)' : 'var(--muted)';
+        // optional: small UI feedback
+        if(on){
+          status.animate([{opacity:.2},{opacity:1}],{duration:320});
+        }
+      });
+    });
+  }
+
+  // Quick actions
+  document.getElementById('autoRenewBtn').addEventListener('click', ()=>{
+    // enable ID + DL as an example
+    ['perm-id','perm-dl'].forEach(id=>{ localStorage.setItem(id,'1'); document.getElementById(id).checked=true; });
+    loadPerms();
+    alert('تم تشغيل التجديد التلقائي (تجريبي لعرض العرض).');
+  });
+
+  document.getElementById('notifyTest').addEventListener('click', ()=> {
+    alert('إشعار تجريبي: توأمك يذكرك أن جوازك يحتاج تحديث خلال 45 يوم.');
+  });
+
+  document.getElementById('resetBtn').addEventListener('click', ()=>{
+    if(confirm('هل تود إعادة ضبط جميع الصلاحيات إلى غير مفعلة؟')){
+      perms.forEach(p=>{ localStorage.removeItem(p.id); document.getElementById(p.id).checked=false; });
+      loadPerms();
+    }
+  });
+
+  // Feedback form: mock submit
+  document.getElementById('feedbackForm').addEventListener('submit', (e)=>{
+    e.preventDefault();
+    const msg = document.getElementById('fb').value.trim();
+    if(!msg){document.getElementById('fb-msg').textContent='اكتب ملاحظة بسيطة قبل الإرسال.'; return;}
+    // Simulate send
+    document.getElementById('fb-msg').textContent='شكراً! تم استلام ملاحظتك (عرض تجريبي).';
+    document.getElementById('fb').value='';
+    setTimeout(()=>document.getElementById('fb-msg').textContent='',4200);
+  });
+
+  // Copy share link (simulated)
+  document.getElementById('copyBtn').addEventListener('click', ()=>{
+    const url = location.href;
+    navigator.clipboard?.writeText(url).then(()=>{
+      alert('تم نسخ رابط العرض إلى الحافظة');
+    }).catch(()=>{ alert('انسخ الرابط يدوياً: ' + url); });
+  });
+
+  // Init
+  attachListeners();
+  loadPerms();
+
+  // Preview button scrolls to dashboard quickly
+  document.getElementById('previewBtn').addEventListener('click', ()=>{
+    document.getElementById('dashTitle').scrollIntoView({behavior:'smooth',block:'center'});
+  });
+
+  // Open settings scroll to perms
+  document.getElementById('openSettings').addEventListener('click', ()=>{
+    document.getElementById('permsTitle').scrollIntoView({behavior:'smooth',block:'center'});
+  });
+
+</script>
+<script>
+document.getElementById("copyBtn").addEventListener("click", function () {
+    const shareURL = window.location.href;
+
+    navigator.clipboard.writeText(shareURL)
+      .then(() => {
+        document.getElementById("fb-msg").textContent = "تم نسخ الرابط بنجاح ✓";
+      })
+      .catch(() => {
+        document.getElementById("fb-msg").textContent = "حدث خطأ أثناء النسخ";
+      });
+});
+</script>
+
+</body>
+</html>
